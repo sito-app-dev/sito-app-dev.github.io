@@ -1,126 +1,362 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidade - SITO</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #fafafa;
-      color: #333;
-    }
-    header {
-      background: #1b1f23;
-      color: white;
-      padding: 1.5rem 2rem;
-      text-align: center;
-    }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-    h1, h2, h3 {
-      color: #1b1f23;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    p {
-      margin: 0.8rem 0;
-    }
-    ul {
-      margin-left: 1.5rem;
-    }
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      padding: 1rem;
-      color: #666;
-      font-size: 0.9rem;
-    }
-    a {
-      color: #0366d6;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidade - SITO</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #E4FFF4;
+            color: #14532D;
+        }
+
+        header {
+            background: #66B584;
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(20, 83, 45, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .header-title {
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: white;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 0 8px rgba(20, 83, 45, 0.1);
+            border: 1px solid #348352;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #14532D;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: #14532D;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #66B584;
+        }
+
+        h3 {
+            color: #2A7948;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin: 0.8rem 0;
+            color: #14532D;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            color: #14532D;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        strong {
+            color: #14532D;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem;
+            color: #737373;
+            font-size: 0.9rem;
+            background-color: #E4FFF4;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #2A7948;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #66B584;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .logo {
+                height: 40px;
+            }
+
+            .header-title {
+                font-size: 1.2rem;
+            }
+
+            main {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h2>Política de Privacidade - SITO</h2>
-  </header>
+    <header>
+        <div class="header-content">
+            <img src="assets/images/logo.png" alt="SITO Logo" class="logo" />
+            <h2 class="header-title">Política de Privacidade - SITO</h2>
+        </div>
+    </header>
+    <main>
+        <h1>Política de Privacidade</h1>
+        <p>Nós, da <strong>SITO</strong>, levamos a sua privacidade a sério e queremos que você saiba quais informações
+            coletamos, como as utilizamos e com quem podemos compartilhá-las. Recomendamos que leia atentamente esta
+            política para compreender melhor o uso dos nossos serviços.</p>
 
-  <main>
-    <h1>Política de Privacidade</h1>
+        <p>Ao acessar o aplicativo <strong>SITO</strong>, você automaticamente aceita as regras e condições descritas
+            nestes Termos de Uso e nesta Política de Privacidade. O aplicativo é destinado exclusivamente para uso
+            profissional por terapeutas ocupacionais em unidades de terapia intensiva (UTI) para adultos. Em caso de
+            menores de 18 anos utilizando o aplicativo, o acesso deve ser assistido pelos pais ou responsáveis legais.
+        </p>
 
-    <p>Nós, da <strong>SITO</strong>, levamos a sua privacidade a sério e queremos que você saiba quais informações coletamos, como as utilizamos e com quem podemos compartilhá-las. Recomendamos que leia atentamente esta política para compreender melhor o uso dos nossos serviços.</p>
+        <p>A <strong>SITO</strong> poderá, sem aviso prévio, bloquear ou cancelar o acesso caso seja identificado uso
+            inadequado, ou nos casos de:</p>
 
-    <p>Ao acessar o aplicativo <strong>SITO</strong>, você automaticamente aceita as regras e condições descritas nestes Termos de Uso e nesta Política de Privacidade. O acesso só poderá ocorrer por meio de dados fornecidos pela organização, sendo proibido utilizar dados de acesso de outro usuário. Em caso de menores de 18 anos, o acesso deve ser assistido pelos pais ou responsáveis legais.</p>
+        <ul>
+            <li>violação de leis ou regulamentos federais, estaduais e/ou municipais;</li>
+            <li>descumprimento destas regras;</li>
+            <li>violação dos princípios da moral e dos bons costumes;</li>
+            <li>uso indevido de dados de pacientes sem autorização adequada.</li>
+        </ul>
 
-    <p>A <strong>SITO</strong> poderá, sem aviso prévio, bloquear ou cancelar o acesso caso a organização solicite, ou nos casos de:</p>
-    <ul>
-      <li>violação de leis ou regulamentos federais, estaduais e/ou municipais;</li>
-      <li>descumprimento destas regras;</li>
-      <li>violação dos princípios da moral e dos bons costumes.</li>
-    </ul>
+        <p>Toda ação executada ou conteúdo publicado durante o uso da <strong>SITO</strong> é de responsabilidade
+            exclusiva do usuário. Assim, a <strong>SITO</strong> se isenta de quaisquer danos causados por terceiros ou
+            pelo uso inadequado do aplicativo.</p>
 
-    <p>Toda ação executada ou conteúdo publicado durante o uso da <strong>SITO</strong> é de responsabilidade exclusiva do usuário e/ou da organização. Assim, a <strong>SITO</strong> se isenta de quaisquer danos causados por terceiros.</p>
+        <h2>Coleta de Informações</h2>
+        <p>A <strong>SITO</strong> coleta informações para operar, fornecer, aprimorar, entender, personalizar e dar
+            suporte aos seus serviços. As informações coletadas dependem do uso que o usuário faz do aplicativo.</p>
 
-    <h2>Coleta de Informações</h2>
-    <p>A <strong>SITO</strong> coleta informações para operar, fornecer, aprimorar, entender, personalizar e dar suporte aos seus serviços. As informações coletadas dependem do uso que o usuário faz do aplicativo.</p>
+        <h3>Informações fornecidas pelos usuários</h3>
+        <p>O aplicativo <strong>SITO</strong> coleta as seguintes informações dos pacientes durante a avaliação de
+            terapia ocupacional:</p>
+        <ul>
+            <li><strong>Nome completo</strong> (obrigatório)</li>
+            <li><strong>Idade</strong> (opcional)</li>
+            <li><strong>Gênero</strong> (opcional)</li>
+            <li><strong>Data de nascimento</strong> (opcional)</li>
+            <li><strong>Diagnóstico</strong> (opcional)</li>
+            <li><strong>Estado civil</strong> (opcional)</li>
+            <li><strong>Escolaridade</strong> (opcional)</li>
+            <li><strong>Profissão</strong> (opcional)</li>
+            <li><strong>Religião</strong> (opcional)</li>
+            <li><strong>Nacionalidade</strong> (opcional)</li>
+            <li><strong>Endereço</strong> (opcional)</li>
+        </ul>
 
-    <h3>Informações fornecidas pelos usuários</h3>
-    <ul>
-      <li>Nome completo</li>
-      <li>E-mail</li>
-      <li>CPF</li>
-      <li>Data de nascimento</li>
-      <li>Telefone</li>
-      <li>Endereço completo</li>
-      <li>Senha de acesso</li>
-    </ul>
+        <h3>Dados de avaliação clínica</h3>
+        <p>O aplicativo também coleta dados relacionados às avaliações de terapia ocupacional, incluindo:</p>
+        <ul>
+            <li><strong>Componentes de Desempenho Ocupacional:</strong> dados sobre avaliações perceptivas, motoras,
+                psicossociais e sensoperceptivas</li>
+            <li><strong>Atividades de Vida Diária (ABVDs):</strong> informações sobre escalas padronizadas, incluindo
+                índices como Barthel e outras avaliações funcionais</li>
+            <li><strong>Condutas e objetivos terapêuticos:</strong> informações sobre condutas propostas e objetivos de
+                tratamento</li>
+        </ul>
 
-    <h3>Dados coletados automaticamente</h3>
-    <ul>
-      <li><strong>Dados de uso e registro:</strong> informações sobre a atividade do usuário, incluindo interações, configurações, duração de sessões e logs de desempenho.</li>
-      <li><strong>Dados de conexões e dispositivos:</strong> modelo do aparelho, sistema operacional, versão do app, operadora, idioma, fuso horário, IP e outros identificadores.</li>
-      <li><strong>Dados de localização:</strong> com permissão do usuário, a <strong>SITO</strong> pode coletar dados de localização exata. Caso o recurso não seja ativado, podemos usar IP ou código de área para determinar uma localização aproximada.</li>
-    </ul>
+        <h3>Dados coletados automaticamente</h3>
+        <ul>
+            <li><strong>Dados de uso e registro:</strong> informações sobre a atividade do usuário dentro do aplicativo,
+                incluindo interações, configurações, duração de sessões e logs de desempenho.</li>
+            <li><strong>Dados de conexões e dispositivos:</strong> modelo do aparelho, sistema operacional, versão do
+                app, operadora, idioma, fuso horário, IP e outros identificadores técnicos.</li>
+        </ul>
 
-    <h2>Uso das Informações</h2>
-    <p>As informações coletadas são utilizadas para:</p>
-    <ul>
-      <li>Operar e melhorar os produtos e serviços da <strong>SITO</strong>;</li>
-      <li>Personalizar a experiência do usuário;</li>
-      <li>Garantir segurança e confiabilidade na plataforma;</li>
-      <li>Cumprir obrigações legais e regulatórias.</li>
-    </ul>
+        <h2>Armazenamento dos Dados</h2>
+        <p>Importante: <strong>Todos os dados coletados pelo aplicativo SITO são armazenados exclusivamente no
+                dispositivo do usuário</strong>. Os dados são mantidos na memória local do aplicativo durante o uso e
+            podem ser armazenados temporariamente no cache do dispositivo para geração de relatórios em PDF.</p>
 
-    <p>Os dados coletados <strong>não são compartilhados com terceiros</strong>, salvo em situações previstas em lei. Todos os dados são armazenados de forma segura na <strong>Amazon Web Services (AWS)</strong>.</p>
+        <p>Os dados <strong>não são transmitidos para servidores externos</strong>, não são enviados para a nuvem e não
+            são compartilhados com terceiros. O aplicativo funciona completamente offline, sem necessidade de conexão
+            com a internet para o armazenamento de dados.</p>
 
-    <h2>Retenção dos Dados</h2>
-    <p>Os dados pessoais dos usuários serão mantidos pelo tempo necessário para a prestação dos serviços, conforme o artigo 15 da Lei nº 13.709/18 (Lei Geral de Proteção de Dados — LGPD).</p>
+        <h2>Uso das Informações</h2>
+        <p>As informações coletadas são utilizadas exclusivamente para:</p>
+        <ul>
+            <li>Operar e melhorar os produtos e serviços da <strong>SITO</strong>;</li>
+            <li>Permitir que terapeutas ocupacionais realizem avaliações estruturadas de pacientes em UTI;</li>
+            <li>Gerar relatórios em PDF (laudos) que podem ser compartilhados pelo próprio usuário através das
+                funcionalidades de compartilhamento do dispositivo;</li>
+            <li>Personalizar a experiência do usuário dentro do aplicativo;</li>
+            <li>Garantir o funcionamento adequado do aplicativo.</li>
+        </ul>
 
-    <p>O usuário pode solicitar a exclusão ou anonimização de seus dados diretamente pelo aplicativo <strong>SITO</strong>, mediante solicitação formal.</p>
+        <p>Os dados coletados <strong>não são compartilhados com terceiros</strong>, salvo quando o próprio usuário
+            optar por compartilhar os relatórios em PDF gerados através das funcionalidades de compartilhamento do
+            dispositivo (como e-mail, mensagens, etc.). Nesses casos, o compartilhamento é de responsabilidade exclusiva
+            do usuário.</p>
 
-    <h2>Consentimento</h2>
-    <p>Ao utilizar os serviços da <strong>SITO</strong>, o usuário consente com esta Política de Privacidade e reconhece seus direitos de:</p>
-    <ul>
-      <li>Acessar, corrigir e atualizar seus dados pessoais;</li>
-      <li>Solicitar a exclusão de seus dados;</li>
-      <li>Revogar o consentimento a qualquer momento, entrando em contato com o suporte da <strong>SITO</strong>.</li>
-    </ul>
+        <h2>Geração e Compartilhamento de Relatórios</h2>
+        <p>O aplicativo permite a geração de relatórios em formato PDF (laudos) contendo as informações coletadas
+            durante a avaliação. Estes relatórios são:</p>
+        <ul>
+            <li>Gerados localmente no dispositivo do usuário;</li>
+            <li>Armazenados temporariamente no cache do dispositivo;</li>
+            <li>Disponibilizados para compartilhamento através das funcionalidades nativas do sistema operacional do
+                dispositivo;</li>
+            <li>De responsabilidade do usuário quanto ao compartilhamento e armazenamento seguro.</li>
+        </ul>
 
-    <h2>Segurança e Confidencialidade</h2>
-    <p>A <strong>SITO</strong> adota medidas técnicas e organizacionais adequadas para proteger os dados pessoais contra acessos não autorizados, perda, destruição ou alteração indevida. Todos os dados são tratados com confidencialidade e em conformidade com a legislação aplicável.</p>
+        <p>O usuário é responsável por garantir que o compartilhamento de relatórios seja feito em conformidade com as
+            leis de proteção de dados de saúde, incluindo a Lei Geral de Proteção de Dados (LGPD) e normas do Conselho
+            Federal de Fisioterapia e Terapia Ocupacional (COFFITO).</p>
 
-    <h2>Solução de Conflitos</h2>
-    <p>Para resolver conflitos decorrentes desta Política de Privacidade, aplicam
+        <h2>Retenção dos Dados</h2>
+        <p>Os dados pessoais dos pacientes são mantidos apenas durante o uso ativo do aplicativo. Quando o usuário
+            utiliza a função de reset ou reinício do aplicativo, os dados são apagados da memória do aplicativo.</p>
+
+        <p>Os relatórios em PDF gerados são armazenados no cache do dispositivo e podem ser mantidos pelo sistema
+            operacional conforme suas políticas de gerenciamento de cache. O usuário pode excluir manualmente esses
+            arquivos através das configurações do dispositivo.</p>
+
+        <p>Conforme o artigo 15 da Lei nº 13.709/18 (Lei Geral de Proteção de Dados — LGPD), os dados pessoais dos
+            usuários serão mantidos pelo tempo necessário para a prestação dos serviços ou conforme exigido por lei.</p>
+
+        <p>O usuário pode solicitar a exclusão de dados diretamente através da função de reset do aplicativo, que remove
+            todos os dados armazenados na sessão atual.</p>
+
+        <h2>Consentimento</h2>
+        <p>Ao utilizar os serviços da <strong>SITO</strong>, o usuário consente com esta Política de Privacidade e
+            reconhece seus direitos de:</p>
+        <ul>
+            <li>Acessar, corrigir e atualizar os dados pessoais dos pacientes durante o uso do aplicativo;</li>
+            <li>Excluir dados através da função de reset do aplicativo;</li>
+            <li>Revogar o consentimento a qualquer momento, deixando de utilizar o aplicativo e excluindo os dados
+                armazenados.</li>
+        </ul>
+
+        <p>É responsabilidade do terapeuta ocupacional usuário do aplicativo obter o consentimento adequado dos
+            pacientes ou seus responsáveis legais antes de inserir dados no aplicativo, em conformidade com as normas
+            éticas e legais aplicáveis.</p>
+
+        <h2>Segurança e Confidencialidade</h2>
+        <p>A <strong>SITO</strong> adota medidas técnicas e organizacionais adequadas para proteger os dados pessoais
+            contra acessos não autorizados, perda, destruição ou alteração indevida. Como os dados são armazenados
+            localmente no dispositivo, a segurança também depende das medidas de segurança implementadas pelo usuário em
+            seu dispositivo (como bloqueio de tela, senhas, etc.).</p>
+
+        <p>Todos os dados são tratados com confidencialidade e em conformidade com a legislação aplicável, incluindo a
+            LGPD e as normas do COFFITO.</p>
+
+        <p><strong>Recomendações de segurança:</strong></p>
+        <ul>
+            <li>Mantenha seu dispositivo protegido com senha ou biometria;</li>
+            <li>Não compartilhe seu dispositivo com pessoas não autorizadas durante o uso do aplicativo;</li>
+            <li>Exclua os dados do aplicativo após o uso, quando apropriado;</li>
+            <li>Certifique-se de que os relatórios compartilhados sejam enviados apenas para destinatários autorizados.
+            </li>
+        </ul>
+
+        <h2>Responsabilidades do Usuário</h2>
+        <p>O usuário do aplicativo <strong>SITO</strong> é responsável por:</p>
+        <ul>
+            <li>Obter consentimento adequado dos pacientes antes de inserir seus dados no aplicativo;</li>
+            <li>Garantir que o uso do aplicativo esteja em conformidade com as normas éticas e legais da profissão de
+                terapia ocupacional;</li>
+            <li>Proteger o acesso ao dispositivo onde o aplicativo está instalado;</li>
+            <li>Gerenciar adequadamente o compartilhamento de relatórios gerados;</li>
+            <li>Excluir dados quando não forem mais necessários ou quando solicitado pelo paciente.</li>
+        </ul>
+
+        <h2>Alterações nesta Política</h2>
+        <p>A <strong>SITO</strong> se reserva o direito de modificar esta Política de Privacidade a qualquer momento. As
+            alterações entrarão em vigor imediatamente após a publicação. Recomendamos que você revise periodicamente
+            esta política para se manter informado sobre como protegemos suas informações.</p>
+
+        <h2>Solução de Conflitos</h2>
+        <p>Para resolver conflitos decorrentes desta Política de Privacidade, aplicam-se as leis brasileiras,
+            especialmente a Lei Geral de Proteção de Dados (Lei nº 13.709/18). Qualquer disputa será resolvida no foro
+            da comarca onde se encontra a sede da organização responsável pelo aplicativo.</p>
+
+        <h2>Contato</h2>
+        <p>Para questões relacionadas a esta Política de Privacidade ou para exercer seus direitos de proteção de dados,
+            entre em contato através dos canais disponibilizados pela organização responsável pelo aplicativo
+            <strong>SITO</strong>.
+        </p>
+
+        <footer>
+            <p>Última atualização: <span id="date"></span></p>
+            <p>&copy; 2025 SITO. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById('date').textContent = new Date().toLocaleDateString('pt-BR');
+    </script>
+</body>
+
+</html>
